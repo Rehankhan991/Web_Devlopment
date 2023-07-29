@@ -1,0 +1,30 @@
+body{
+  background-color: black;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1380px 650px;
+}
+
+.box{
+  background-color: #bababa;
+  opacity: 0.7;
+  font-size: 80px;
+  color: white;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 450px;
+  border: 2px solid whitesmoke;
+  border-radius: 25px;
+}
+#d{
+  font-weight:bold;
+}
+.text{
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
