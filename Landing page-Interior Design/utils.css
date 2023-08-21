@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+}
+
+.justify{
+    justify-content: center;
+}
+
+.align{
+    align-items: center;
+}
+.mcolor{
+    color: rgb(66, 83, 54);
+}
