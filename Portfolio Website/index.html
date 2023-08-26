@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav ">
+            <ul class="flex align">
+                <div class="nav-title ">
+                    <p><a>R</a>ehan.</p>
+                </div>
+                <div class="nav-items flex" id="sidemenu">
+                    <li><a href="#box1">Home</a></li>
+                    <li><a href="#box2">About</a></li>
+                    <li><a href="#box3">Services</a></li>
+                    <li><a href="#box4">Portfolio</a></li>
+                    <li><a href="#box5">Contact Me</a></li>
+                    
+                    <i class="fa-solid fa-circle-xmark " onclick="closemenu()"></i>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="box1" id="box1">
+            <div class="">
+                <img class="bgimg" src="bg.png">
+            </div>
+            <div class="head-text1 flex justify align">
+                <div class="head-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm Mohammad <span>Rehan</span>.</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box2" id="box2">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="rehan_passport_img-removebg-preview.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus asperiores eaque expedita
+                        libero provident fugiat porro nostrum, amet possimus architecto numquam aperiam! Totam, suscipit
+                        temporibus?</p>
+
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Technology</span><br>Web App Development<br>Internet Of Things<br>Arduino<br></li>
+                            <li><span>Languages</span><br>c, c++, Python, Java<br>HTML, CSS, javascript<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Secondary</span><br>Board- RBSE<br>Grades- 76.33%<br></li>
+                            <li><span>Higher Secondary</span><br>Board- RBSE<br>Grades- 90%<br></li>
+                            <li><span>B-Tech</span><br>Geetanjali, Institute of Technical Studies<br>Udaipur,
+                                Rajasthan<br></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box3 flex justify" id="box3">
+            <div class="services">
+                <h1>My Services</h1>
+                <div class="services-list">
+                    <div class="">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p class="gcolor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus debitis, fugiat qui similique, earum id deleniti placeat libero quaerat.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="">
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p class="gcolor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus debitis, fugiat qui similique, earum id deleniti placeat libero quaerat expedita incidunt laboriosam nulla velit error.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="">
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX</h2>
+                        <p class="gcolor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus debitis, fugiat qui similique, earum id.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box4 flex justify" id="box4">
+            <div class="portfolio">
+                <h1>My Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media APP</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima illo odit quibusdam!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Music APP</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima illo odit quibusdam!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Clone APP</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima illo odit quibusdam!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <div class="box5 flex justify" id="box5">
+            <div class="contact flex">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>mohdrehan6377@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+916377130884</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="Rehan-resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-Mail" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <p id="msg"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <p>Copyright &copy Rehan. Made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
